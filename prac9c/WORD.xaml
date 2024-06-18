@@ -51,7 +51,7 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <Button Content="Сохранить" Click="Button_Click"/>
-            <Button Grid.Column="1" Content="Загрузить" Click="Button_Click_1"/>
+            <Button Grid.Column="1" Content="Отправить по почте" Click="Button_Click_1"/>
         </Grid>
     </Grid>
 </Window>

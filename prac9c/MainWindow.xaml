@@ -23,15 +23,15 @@
         </materialDesign:Badged>
 
         <materialDesign:Badged Badge="{materialDesign:PackIcon Heart}"  BadgeColorZoneMode="SecondaryMid" BadgeBackground="#FFE054CE" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" BadgeForeground="White">
-            <Button Content="Открыть WORD документ" IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" Background="#FF9CD0C5" FontSize="20" FontFamily="Ebrima" Height="52" Width="423" />
+            <Button Content="Открыть WORD документ" IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" Background="#FF9CD0C5" FontSize="20" FontFamily="Ebrima" Height="52" Width="423" Click="Button_Click_1" />
         </materialDesign:Badged>
 
         <materialDesign:Badged Badge="{materialDesign:PackIcon Heart}"  BadgeColorZoneMode="SecondaryMid" BadgeBackground="#FFE054CE" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" BadgeForeground="White">
-            <Button Content="Создать EXCEL документ" IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" Background="#FF9CD0C5" FontSize="20" FontFamily="Ebrima" Height="52" Width="423" />
+            <Button Content="Создать EXCEL документ" IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" Background="#FF9CD0C5" FontSize="20" FontFamily="Ebrima" Height="52" Width="423" Click="Button_Click_2" />
         </materialDesign:Badged>
 
         <materialDesign:Badged Badge="{materialDesign:PackIcon Heart}"  BadgeColorZoneMode="SecondaryMid" BadgeBackground="#FFE054CE" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center" BadgeForeground="White">
-            <Button Content="Открыть EXCEL документ" IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" Background="#FF9CD0C5" FontSize="20" FontFamily="Ebrima" Height="52" Width="423" />
+            <Button Content="Открыть EXCEL документ" IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" Background="#FF9CD0C5" FontSize="20" FontFamily="Ebrima" Height="52" Width="423" Click="Button_Click_3" />
         </materialDesign:Badged>
 
 

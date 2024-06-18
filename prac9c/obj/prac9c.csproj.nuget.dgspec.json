@@ -44,9 +44,33 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
+            "DocumentFormat.OpenXml": {
+              "target": "Package",
+              "version": "[3.0.2, )"
+            },
+            "FreeSpire.Office": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            },
+            "ImapX": {
+              "target": "Package",
+              "version": "[2.0.0.18, )"
+            },
             "MaterialDesignThemes": {
               "target": "Package",
               "version": "[5.0.0, )"
+            },
+            "Open-XML-SDK": {
+              "target": "Package",
+              "version": "[2.9.1, )"
+            },
+            "Spire.Office": {
+              "target": "Package",
+              "version": "[9.5.0, )"
+            },
+            "WindowsAPICodePack-Shell": {
+              "target": "Package",
+              "version": "[1.1.1, )"
             }
           },
           "imports": [

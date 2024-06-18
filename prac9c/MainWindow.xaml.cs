@@ -1,5 +1,8 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using Microsoft.WindowsAPICodePack.Dialogs;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,6 +33,39 @@ namespace prac9c
             WORD word = new WORD();
             word.Show();
             this.Close();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            WORDLOAD wordl = new WORDLOAD();
+            wordl.Show();
+            this.Close();
+
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            CreateExcel excel = new CreateExcel();
+            excel.Show();
+            this.Close();
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog
+            {
+                Filter = "Excel Files|*.xls;*.xlsx",
+                DefaultExt = "xlsx"
+            };
+
+            if (openFileDialog.ShowDialog() == true)
+            {
+                string filePath = openFileDialog.FileName;
+                CreateExcel createExcel = new CreateExcel();
+                createExcel.LoadExcelData(filePath);
+                createExcel.Show();
+                this.Close();
+            }
         }
     }
 }
